@@ -3,36 +3,48 @@ import 'package:flutter/material.dart';
 class MyScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    var MyImg = new Stack(children: <Widget>[
+      CircleAvatar(
+        
+      )
+    ],);
+
     return Scaffold(
       backgroundColor: Color.fromRGBO(240, 240, 240, 10),
-      body: Container(
-        color: Colors.purple,
-        padding: const EdgeInsets.all(0.0),
-        height: 250.0,
-        width: 750.0,
-        child: Stack(
-          children: [
-            UserAccountsDrawerHeader(
-              accountEmail: Text('data'),
-              currentAccountPicture: CircleAvatar(
-                backgroundImage: NetworkImage('https://img.isharebest.com/2018041509.jpg'),
+      body: Center(
+        child:Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              color: Colors.purple,
+              padding: const EdgeInsets.all(0.0),
+              margin: EdgeInsets.all(0.0),
+              height: 190.0,
+              width: 750.0,
+              child: Container(
+                child: UserAccountsDrawerHeader(
+                  accountEmail: Container(
+                    height: 20,
+                    width: 100,
+                    margin: EdgeInsets.all(10.0),
+                    child: Text('data13212'),
+                  ),
+                  currentAccountPicture: Container(
+                    margin: EdgeInsets.all(0.0),
+                    child: CircleAvatar(
+                      backgroundImage: NetworkImage('https://img.isharebest.com/2018041509.jpg'),
+                    ),
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.blueGrey,
+                  ),
+                ),
               ),
-            )
+            ),
+            Container(),
           ],
-          // padding: const EdgeInsets.fromLTRB(80, 150, 80, 50),
-          // padding: EdgeInsets.all(50),
-          // margin: EdgeInsets.all(50),
-          // child: CircleAvatar(
-          //   radius: 36.0,
-          //   //borderRadius: BorderRadius.circular(100.0),
-          //   child: new Image.network(
-          //   'https://img.isharebest.com/2018041509.jpg',
-          //   fit: BoxFit.cover,
-          //   )
-          // ),
-          // height: 80.0,
-          // width: 80.0,
-        ),
+        )
       ),
     );
   }

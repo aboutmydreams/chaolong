@@ -3,13 +3,68 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar:AppBar(
-        title: Text('HOME1'),
+    return DefaultTabController(
+      length: 4,
+      child: Scaffold(
+        backgroundColor: Colors.grey[100],
+        appBar: AppBar(
+          title: Text('car'),
+          textTheme:TextTheme(),
+          // actions: <Widget>[
+          //   IconButton(
+          //     icon: Icon(Icons.search),
+          //     tooltip: 'Search',
+          //     onPressed: () => debugPrint('Search button is pressed.'),
+          //   )
+          // ],
+          elevation: 0.0,
+          bottom: TabBar(
+            unselectedLabelColor: Colors.white54,
+            labelColor: Colors.yellow,
+            indicatorColor: Colors.yellow[300],
+            indicatorSize: TabBarIndicatorSize.label,
+            indicatorWeight: 3.0,
+            tabs: <Widget>[
+              Tab(text: '科一',icon: Icon(Icons.local_florist)),
+              Tab(text: '科二',icon: Icon(Icons.change_history)),
+              Tab(text: '科三',icon: Icon(Icons.directions_bike)),
+              Tab(text: '科四',icon: Icon(Icons.view_quilt)),
+            ],
+          ),
+        ),
+        body: TabBarView(
+          children: <Widget>[
+            //ListViewDemo(),
+            Container(child: Text('data1'),),
+            Container(child: Text('data2'),),
+            Container(child: Text('data3'),),
+            Container(child: Text('data4'),),
+            // Icon(Icons.change_history, size: 128.0, color: Colors.black12),
+            //BasicDemo(),
+            // Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
+            //LayoutDemo(),
+            //SliverDemo(),
+          ],
+        ),
+        // drawer: DrawerDemo(),
+        // bottomNavigationBar: BottomNavigationBarDemo(),
       ),
-      body:Center(
-        child: Text('HOME1'),
-      )
     );
   }
+}
+
+
+class Kemu{
+  var k1 = new Container(
+
+  );
+  var k2 = new Container(
+    
+  );
+  var k3 = new Container(
+    
+  );
+  var k4 = new Container(
+    
+  );
 }
