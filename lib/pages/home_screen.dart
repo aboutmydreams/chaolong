@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: AppBar(
-          title: Text('car'),
+          title: Text('超龙学车'),
           textTheme:TextTheme(),
           // actions: <Widget>[
           //   IconButton(
