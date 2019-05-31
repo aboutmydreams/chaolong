@@ -50,10 +50,34 @@ class MyScreen extends StatelessWidget {
                     style: TextStyle(color: Colors.white, fontSize: 17.0, fontWeight: FontWeight.w500),
                   ),
                   onPressed: (){},
-                ) 
+                )
+              ),
+              Positioned(
+                top: 150.0,
+                child:Container(
+                  child: Row(
+                    children: <Widget>[
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(6.0),
+                        child: Container(
+                          width: 205,
+                          height: 180,
+                          color: Colors.green,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(6.0),
+                        child: Container(
+                          width: 205,
+                          height: 180,
+                          color: Colors.yellow,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ],
-            
           ),
         ),
       )

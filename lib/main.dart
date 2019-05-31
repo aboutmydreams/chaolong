@@ -11,19 +11,14 @@ import 'pages/home_screen.dart';
 import 'pages/page_screen.dart';
 import 'pages/air_screen.dart';
 
-
-
-void main()=> runApp(new MyApp());
+void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title:'Flutter bottomNavigationBar',
-      theme:ThemeData.light(),
-      home:BottomNavigationWidget()
-    );
+        title: 'Flutter bottomNavigationBar',
+        theme: ThemeData.light(),
+        home: BottomNavigationWidget());
   }
 }
-
-
