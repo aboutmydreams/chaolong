@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'kemu/kemu2.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -38,9 +39,7 @@ class HomeScreen extends StatelessWidget {
             Container(
               child: Text('data1'),
             ),
-            Container(
-              child: Text('data2'),
-            ),
+            Kemu2Page(),
             Container(
               child: Text('data3'),
             ),
