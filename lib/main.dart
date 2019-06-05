@@ -21,7 +21,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '轻驾',
-      theme: ThemeData.light(),
+      // theme: ThemeData.light(),
+      // theme: ThemeData.dark(),// 夜间模式！！
+      theme: ThemeData(accentColor: Colors.pink),
       initialRoute: '/',
       routes: {
         '/': (context) => BottomNavigationWidget(),

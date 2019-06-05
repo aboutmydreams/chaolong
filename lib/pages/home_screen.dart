@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'kemu/kemu1.dart';
 import 'kemu/kemu2.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -36,9 +37,7 @@ class HomeScreen extends StatelessWidget {
         body: TabBarView(
           children: <Widget>[
             //ListViewDemo(),
-            Container(
-              child: Text('data1'),
-            ),
+            Kemu1Page(),
             Kemu2Page(),
             Container(
               child: Text('data3'),
