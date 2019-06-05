@@ -37,17 +37,12 @@ class _Kemu1PageState extends State<Kemu1Page> {
                 )
               ],
             ),
-            decoration: new BoxDecoration(
+            decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: new BorderRadius.all(
                 const Radius.circular(8.0),
               ),
               boxShadow: <BoxShadow>[
-                BoxShadow(
-                  offset: new Offset(0.0, 0.0), // (x, y)
-                  blurRadius: 0.1,
-                  color: const Color(0x80000000),
-                ),
                 BoxShadow(
                   offset: new Offset(0.0, 3.0),
                   blurRadius: 6.0,
@@ -56,6 +51,39 @@ class _Kemu1PageState extends State<Kemu1Page> {
               ],
             ),
           ),
+          Row(
+            children: <Widget>[
+              ClipOval(
+                child: Container(
+                  width: 90.0,
+                  height: 90.0,
+                  child: Tooltip(
+                    message: " 喵！",
+                    child: FlatButton(
+                      color: Colors.green,
+                      child: Text("练习"),
+                      onPressed: () {},
+                    ),
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: <BoxShadow>[
+                      BoxShadow(
+                        offset: new Offset(0.0, 3.0),
+                        blurRadius: 6.0,
+                        color: const Color(0x80000000),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              FlatButton(
+                color: Colors.green,
+                child: Text("模拟考试"),
+                onPressed: () {},
+              ),
+            ],
+          )
         ],
       ),
     );

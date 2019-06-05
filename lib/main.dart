@@ -23,7 +23,10 @@ class MyApp extends StatelessWidget {
       title: '轻驾',
       // theme: ThemeData.light(),
       // theme: ThemeData.dark(),// 夜间模式！！
-      theme: ThemeData(accentColor: Colors.pink),
+      theme: ThemeData(
+        primaryColor: Colors.purple,
+        accentColor: Colors.pink,
+      ),
       initialRoute: '/',
       routes: {
         '/': (context) => BottomNavigationWidget(),
