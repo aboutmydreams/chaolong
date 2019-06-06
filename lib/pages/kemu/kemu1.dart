@@ -61,7 +61,7 @@ class _Kemu1PageState extends State<Kemu1Page> {
                     message: " 喵！",
                     child: FlatButton(
                       color: Colors.green,
-                      child: Text("练习"),
+                      child: Text("刷题"),
                       onPressed: () {},
                     ),
                   ),
